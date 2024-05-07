@@ -9,7 +9,7 @@ public class Employee {
 
     public Employee(String name, String department, int salary) {
         setName(name);
-        setdepartment(department);
+        setDepartment(department);
         setSalary(salary);
     }
 

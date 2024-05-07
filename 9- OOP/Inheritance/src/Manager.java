@@ -2,8 +2,8 @@ public class Manager extends Employee {
 
     private String officeLocation;
 
-    public Manager(String name, String depertmant, int salary, String officeLocation) {
-        super(name, depertmant, salary);
+    public Manager(String name, String department, int salary, String officeLocation) {
+        super(name, department, salary);
         setOfficeLocation(officeLocation);
     }
 
