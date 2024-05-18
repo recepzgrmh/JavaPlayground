@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+
+    <!-- Age TextView -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age"
+        android:id="@+id/age"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"/>
+
+    <!-- Age EditText -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Years"
+        android:textAlignment="viewEnd"
+        android:id="@+id/ageEdit"
+        android:layout_below="@+id/age"
+        android:inputType="number"/>
+
+    <!-- New RelativeLayout for Height and Weight -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ageEdit"
+        android:layout_marginTop="50dp"
+        android:id="@+id/relativeHeight">
+
+        <!-- Height TextView -->
+        <TextView
+            android:id="@+id/height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Height"
+            android:textSize="20dp"/>
+
+        <!-- Weight TextView -->
+        <TextView
+            android:id="@+id/weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/height"
+            android:layout_marginStart="100dp"
+            android:text="Weight"
+            android:textSize="20dp"/>
+
+        <!-- Height EditText -->
+        <EditText
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editHeight"
+            android:inputType="number"
+            android:layout_below="@+id/height"/>
+
+        <!-- Weight EditText -->
+        <EditText
+            android:layout_width="140dp"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/editHeight"
+            android:id="@+id/editWeight"
+            android:layout_marginStart="20dp"
+            android:layout_below="@+id/weight"/>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/calculate"
+        android:layout_below="@+id/relativeHeight"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:text="Calculate"
+        android:backgroundTint="@color/design_default_color_error"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calculate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/finalTxt"
+        android:textSize="24dp"/>
+
+
+
+</RelativeLayout>
